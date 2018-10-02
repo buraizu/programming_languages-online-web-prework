@@ -4,7 +4,6 @@ def reformat_languages(languages)
   languages.each do |key, value|
     value.each do |key2, value2|
       value2.each do |key3, value3|
-        puts key.to_s.split.class
         return_hash[key2] = {:type => "#{value3}", :style => [key]}
       end
     end
